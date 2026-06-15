@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devxis Design | Software de Gestión Médica</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-slate-800">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur border-b z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="flex items-center text-2xl font-bold text-sky-600">
+                Devxis Desing
+            </h1>
+
+            <div class="hidden md:flex gap-8">
+                <a href="#inicio" class="hover:text-sky-600">Inicio</a>
+                <a href="#funcionalidades" class="hover:text-sky-600">Funcionalidades</a>
+                <a href="#demo" class="hover:text-sky-600">Demo</a>
+                <a href="#contacto" class="hover:text-sky-600">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="pt-36 pb-24 bg-gray-50/70">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+                <div>
+                    <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm">
+                        Gestión Médica Moderna
+                    </span>
+
+                    <h2 class="text-5xl font-bold mt-6 leading-tight">
+                        Software de Gestión Médica
+                    </h2>
+
+                    <p class="mt-6 text-lg text-slate-600">
+                        Digitalizá la administración de tu consultorio o clínica
+                        mediante una plataforma intuitiva para gestionar pacientes,
+                        profesionales y turnos.
+                    </p>
+
+                    <div class="flex gap-4 mt-8">
+                        <a href="#contacto"
+                            class="bg-sky-600 text-white px-6 py-3 rounded-xl hover:bg-sky-700 transition">
+                            Solicitar Demo
+                        </a>
+
+                        <a href="#funcionalidades"
+                            class="border border-slate-300 px-6 py-3 rounded-xl bg-white hover:bg-slate-100 transition">
+                            Ver Funcionalidades
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hidden md:block">
+                    <img src="./images/RobotitoGPT.png" alt="Dashboard" class="rounded-[80px] max-h-[400px]">
+                </div>
+
+                <a href="https://wa.me/5491137659081" target="_blank" rel="noopener noreferrer"
+                    class="fixed bottom-4 right-4 text-white text-4xl bg-green-500 rounded-full p-2 shadow-lg hover:bg-green-600 transition z-50">
+                    <i class="bxl bx-whatsapp"></i>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FUNCIONALIDADES -->
+    <section id="funcionalidades" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold">
+                    Funcionalidades Principales
+                </h3>
+
+                <p class="text-slate-600 mt-4">
+                    Todo lo que necesitás para administrar tu consultorio.
+                </p>
+            </div>
+
+            <div class="relative">
+
+                <div id="carousel" class="bg-slate-50 rounded-3xl shadow-lg p-10 min-h-[350px]">
+
+                </div>
+
+                <div class="flex justify-center gap-4 mt-8 absolute bottom-0 left-[43%]">
+
+                    <button id="prevSlideBtn" class="hover:text-slate-700">
+                        <i class="bx bx-arrow-left-stroke-circle text-4xl"></i>
+                    </button>
+
+                    <button id="nextSlideBtn" class="p-2 hover:text-slate-700">
+                        <i class="bx bx-arrow-right-stroke-circle text-4xl"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="demo" class="py-24 bg-gray-50/70">
+        <div class="max-w-5xl mx-auto px-6">
+
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold">
+                    Conocé la Plataforma en Acción
+                </h3>
+
+                <p class="text-slate-600 mt-4">
+                    Mirá cómo Devxis Design simplifica la gestión médica.
+                </p>
+            </div>
+
+            <div class="bg-black/90 rounded-3xl overflow-hidden shadow-xl mx-auto max-w-[500px]">
+
+                <video controls class="w-full max-h-[500px]">
+                    
+                </video>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section id="contacto" class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold">
+                    Solicitar una Demo
+                </h3>
+
+                <p class="text-slate-600 mt-4">
+                    Completá el formulario y nos pondremos en contacto.
+                </p>
+            </div>
+
+            <form id="contactForm" class="bg-slate-50 p-8 rounded-3xl shadow-lg space-y-5">
+                <input type="text" name="nombre" placeholder="Nombre Completo" class="w-full p-4 border rounded-xl"
+                    required>
+
+                <input type="email" name="email" placeholder="Email" class="w-full p-4 border rounded-xl" required>
+
+                <input type="tel" name="telefono" placeholder="Teléfono" class="w-full p-4 border rounded-xl">
+
+                <input type="text" name="consultorio" placeholder="Consultorio o Clínica"
+                    class="w-full p-4 border rounded-xl">
+
+                <textarea name="mensaje" rows="5" placeholder="Mensaje" class="w-full p-4 border rounded-xl"></textarea>
+
+                <button type="submit"
+                    class="w-full bg-sky-600/90 text-white py-4 rounded-xl hover:bg-sky-700 transition">
+                    Solicitar Demo
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900/90 text-white py-10">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h4 class="text-2xl font-bold">
+                Devxis Design
+            </h4>
+
+            <p class="text-slate-400 mt-3">
+                Software de Gestión Médica
+            </p>
+
+            <p class="text-slate-500 mt-6">
+                © 2026 Devxis Design. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
