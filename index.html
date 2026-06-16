@@ -18,16 +18,34 @@
     <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur border-b z-50">
         <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="flex items-center text-2xl font-bold text-sky-600">
-                Devxis Desing
+                Devxis Design
             </h1>
 
+            <!-- MENU DESKTOP -->
             <div class="hidden md:flex gap-8">
                 <a href="#inicio" class="hover:text-sky-600">Inicio</a>
                 <a href="#funcionalidades" class="hover:text-sky-600">Funcionalidades</a>
-                <a href="#demo" class="hover:text-sky-600">Demo</a>
+                <a href="#presentacion" class="hover:text-sky-600">Presentación</a>
+                <a href="#precios" class="hover:text-sky-600">Precios</a>
                 <a href="#contacto" class="hover:text-sky-600">Contacto</a>
             </div>
+
+            <!-- BOTÓN MOBILE -->
+            <button id="mobileMenuBtn" class="md:hidden text-3xl text-slate-700">
+                <i class="bx bx-menu"></i>
+            </button>
         </nav>
+
+        <!-- MENU MOBILE -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-6 py-5 flex flex-col gap-4">
+                <a href="#inicio" class="mobile-link hover:text-sky-600">Inicio</a>
+                <a href="#funcionalidades" class="mobile-link hover:text-sky-600">Funcionalidades</a>
+                <a href="#presentacion" class="mobile-link hover:text-sky-600">Presentación</a>
+                <a href="#precios" class="mobile-link hover:text-sky-600">Precios</a>
+                <a href="#contacto" class="mobile-link hover:text-sky-600">Contacto</a>
+            </div>
+        </div>
     </header>
 
     <!-- HERO -->
@@ -69,7 +87,7 @@
                 </div>
 
                 <a href="https://wa.me/5491137659081" target="_blank" rel="noopener noreferrer"
-                    class="fixed bottom-4 right-4 text-white text-4xl bg-green-500 rounded-full p-2 shadow-lg hover:bg-green-600 transition z-50">
+                    class="fixed bottom-4 right-4 text-white text-4xl bg-green-500 rounded-full px-2 py-1 shadow-lg hover:bg-green-600 transition z-50">
                     <i class="bxl bx-whatsapp"></i>
                 </a>
 
@@ -93,17 +111,17 @@
 
             <div class="relative">
 
-                <div id="carousel" class="bg-slate-50 rounded-3xl shadow-lg p-10 min-h-[350px]">
+                <div id="carousel" class="bg-slate-50 rounded-3xl shadow-lg px-10 py-14 min-h-[350px]">
 
                 </div>
 
-                <div class="flex justify-center gap-4 mt-8 absolute bottom-0 left-[43%]">
+                <div class="flex justify-center gap-4 mt-8">
 
-                    <button id="prevSlideBtn" class="hover:text-slate-700">
+                    <button id="prevSlideBtn" class="absolute bottom-7 left-5 hover:text-slate-700">
                         <i class="bx bx-arrow-left-stroke-circle text-4xl"></i>
                     </button>
 
-                    <button id="nextSlideBtn" class="p-2 hover:text-slate-700">
+                    <button id="nextSlideBtn" class="absolute bottom-7 right-5 hover:text-slate-700">
                         <i class="bx bx-arrow-right-stroke-circle text-4xl"></i>
                     </button>
                 </div>
@@ -114,7 +132,7 @@
     </section>
 
     <!-- VIDEO -->
-    <section id="demo" class="py-24 bg-gray-50/70">
+    <section id="presentacion" class="py-24 bg-gray-50/70">
         <div class="max-w-5xl mx-auto px-6">
 
             <div class="text-center mb-12">
@@ -135,6 +153,175 @@
 
             </div>
 
+        </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section id="precios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-14">
+                <h3 class="text-4xl font-bold">
+                    Planes y Precios
+                </h3>
+
+                <p class="text-slate-600 mt-4">
+                    Elegí el plan que mejor se adapte a tu consultorio o clínica.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- PLAN GRATIS -->
+                <article class="bg-slate-50 rounded-3xl shadow-lg p-8 border border-slate-200 flex flex-col">
+                    <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm w-fit">
+                        Prueba inicial
+                    </span>
+
+                    <h4 class="text-2xl font-bold mt-6">
+                        Plan Gratuito
+                    </h4>
+
+                    <p class="text-slate-600 mt-3">
+                        Ideal para probar el sistema y conocer sus funcionalidades principales.
+                    </p>
+
+                    <div class="mt-6">
+                        <span class="text-4xl font-bold">$0</span>
+                        <span class="text-slate-500"> / 15 días</span>
+                    </div>
+
+                    <ul class="space-y-4 mt-8 text-slate-700 flex-1">
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-green-500 text-2xl"></i>
+                            Gestión de turnos
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-green-500 text-2xl"></i>
+                            Portal para pacientes
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-green-500 text-2xl"></i>
+                            Panel de administración
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-green-500 text-2xl"></i>
+                            Gestión de profesionales
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-green-500 text-2xl"></i>
+                            Nombre del negocio personalizado
+                        </li>
+                        <li class="flex gap-3 text-slate-500">
+                            <i class="bx bx-x text-red-400 text-2xl"></i>
+                            Sin mejoras de UI personalizadas
+                        </li>
+                    </ul>
+
+                    <a href="#contacto"
+                        class="mt-8 text-center border border-sky-600 text-sky-600 py-3 rounded-xl hover:bg-sky-50 transition">
+                        Probar gratis
+                    </a>
+                </article>
+
+                <!-- PLAN MENSUAL -->
+                <article
+                    class="bg-sky-600 text-white rounded-3xl shadow-xl p-8 border border-sky-600 flex flex-col scale-105">
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm w-fit">
+                        Más elegido
+                    </span>
+
+                    <h4 class="text-2xl font-bold mt-6">
+                        Plan Mensual
+                    </h4>
+
+                    <p class="text-sky-100 mt-3">
+                        Pensado para consultorios que necesitan operar de forma continua.
+                    </p>
+
+                    <div class="mt-6">
+                        <span class="text-4xl font-bold">$30.000</span>
+                        <span class="text-sky-100"> / mes</span>
+                    </div>
+
+                    <ul class="space-y-4 mt-8 flex-1">
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-white text-2xl"></i>
+                            Todos los beneficios del plan gratuito
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-white text-2xl"></i>
+                            Uso mensual del sistema
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-white text-2xl"></i>
+                            Cambios de UI personalizados
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-white text-2xl"></i>
+                            Adaptación visual al negocio
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-white text-2xl"></i>
+                            Soporte para ajustes generales
+                        </li>
+                    </ul>
+
+                    <a href="#contacto"
+                        class="mt-8 text-center bg-white text-sky-600 py-3 rounded-xl hover:bg-slate-100 transition">
+                        Elegir plan mensual
+                    </a>
+                </article>
+
+                <!-- PLAN PREMIUM -->
+                <article class="bg-slate-50 rounded-3xl shadow-lg p-8 border border-slate-200 flex flex-col">
+                    <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm w-fit">
+                        Avanzado
+                    </span>
+
+                    <h4 class="text-2xl font-bold mt-6">
+                        Plan Premium
+                    </h4>
+
+                    <p class="text-slate-600 mt-3">
+                        Para clínicas que quieren automatizar la comunicación con sus pacientes.
+                    </p>
+
+                    <div class="mt-6">
+                        <span class="text-4xl font-bold">$60.000</span>
+                        <span class="text-slate-500"> / mes</span>
+                    </div>
+
+                    <ul class="space-y-4 mt-8 text-slate-700 flex-1">
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-green-500 text-2xl"></i>
+                            Todos los beneficios del plan mensual
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-green-500 text-2xl"></i>
+                            Recordatorios por email
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-green-500 text-2xl"></i>
+                            ChatBot de preguntas frecuentes
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-green-500 text-2xl"></i>
+                            Integración en la página principal
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="bx bx-check text-green-500 text-2xl"></i>
+                            Mayor automatización de atención
+                        </li>
+                    </ul>
+
+                    <a href="#contacto"
+                        class="mt-8 text-center bg-slate-900 text-white py-3 rounded-xl hover:bg-slate-800 transition">
+                        Elegir plan premium
+                    </a>
+                </article>
+
+            </div>
         </div>
     </section>
 

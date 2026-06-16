@@ -86,6 +86,7 @@ function prevSlide() {
   resetInterval();
 }
 
+//Formulario
 function handleContactSubmit(e) {
   e.preventDefault();
 
@@ -119,3 +120,18 @@ autoSlide = setInterval(nextSlideAuto, 5000);
 nextSlideBtn.addEventListener('click', nextSlide);
 prevSlideBtn.addEventListener('click', prevSlide);
 contactForm.addEventListener('submit', handleContactSubmit);
+
+//MENU MOBILE
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+
+mobileMenuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+
+mobileLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  });
+});
